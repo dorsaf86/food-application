@@ -1,0 +1,29 @@
+<div class="form-card">
+  <h2>menu</h2>
+  <form [formGroup]="menuForm">
+    <div class="form-group">
+      <label for="titre">Menu</label>
+      <select [(ngModel)]="selectedMenu" name="idMenu" class="form-control" formControlName="idMenu">
+        <option>--select creneaux--</option>
+        <option [value]="list.idMenu" *ngFor="let list  of menuList">{{list.titre}}</option>
+        <option value="0">Autre</option>
+      </select>
+      <input *ngIf="selectedMenu === '0'" name="titreAutre"  type="text" id="titre" formControlName="titreAutre" required>
+    </div>
+    <div class="form-group">
+      <label for="nomF">Nom de la formule</label>
+      <input type="text" id="prix" formControlName="nom_formule" required>
+    </div>
+    <div class="form-group">
+      <label for="prix">prix</label>
+      <input type="text" id="prix" formControlName="prix" required>
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <input type="description" id="description" formControlName="description" required>
+    </div>
+    <div>
+      <button type="button" class="btn btn-success" (click)="onSubmitFrom()">enregistrer</button>
+    </div>
+  </form>
+</div>

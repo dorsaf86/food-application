@@ -1,0 +1,24 @@
+<p>reservation works!</p>
+<div class="form-group">
+</div>
+<div class ="row prt-list">
+<div class="col-md-2 prt-list">email</div>
+<div class="col-md-2 prt-list">username</div>
+<div class="col-sm-2 prt-list">date</div>
+<div class="col-sm-2 prt-list">time</div>
+<div class="col-sm-2 prt-list">allergy</div>
+<div class="col-sm-2 prt-list">nb_personnes</div>
+
+
+        <div class="row prt-list" *ngFor="let table of tables">
+
+          <div class="col-md-2">{{ table.email }}</div>
+          <div class="col-md-2">{{ table.username}}</div>
+         <div class="col-md-2">{{ table.date}}</div>
+         <div class="col-md-2">{{ table.time}}</div>
+         <div class="col-md-2">{{ table.allergy}}</div>
+         <div class="col-md-2">{{ table.nb_personnes}}</div>
+
+           </div>
+
+          </div>

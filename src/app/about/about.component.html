@@ -1,0 +1,20 @@
+
+
+
+<div class="contenair">
+  <div class="slider">
+<ng-image-slider [images]="newArray"  [infinite]="true" [imageSize]="{width:400, height: 300, space: 10}"
+[autoSlide]="false" #navigation>
+
+</ng-image-slider>
+</div>
+
+
+<p> BIENVENUE DANS NOTRE RESTAURANT SI NOS PLATS VOUS DONNE ENVIE VOUS POUVEZ FAIRE UNE RESERVATION
+  CI DESSOUS
+</p>
+<div class="buttons">
+  <button class="btn btn-secondary"(click)="onAddNewReservation()">Reserver</button>
+
+</div>
+</div>

@@ -1,0 +1,30 @@
+<h1>Ma carte</h1>
+<div class="form-card">
+
+  <form [formGroup]="categForm">
+    <div class="form-group">
+      <label for="name_categorie">categorie</label>
+      <select [(ngModel)]="selectedCategorie" name="idCategorie" class="form-control" formControlName="idCategorie">
+        <option>--select categories--</option>
+        <option [value]="list.idCategorie" *ngFor="let list  of categorieList">{{list.name_categorie}}</option>
+        <option value="0">Autre</option>
+      </select>
+      <input *ngIf="selectedCategorie === '0'" name="titreAutre"  type="text" id="name_categorie" formControlName="titreAutre" required>
+    </div>
+    <div class="form-group">
+      <label for="titre">Nom de plat</label>
+      <input type="titre" name="titre" formControlName="titre" required>
+    </div>
+    <div class="form-group">
+      <label for="prix">prix</label>
+      <input type="prix" id="prix" formControlName="prix" required>
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <input type="description" id="description" formControlName="description" required>
+    </div>
+    <div>
+      <button type="button" class="btn btn-success" (click)="onSubmitFrom()">enregistrer</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,30 @@
+
+<h1>Mes horaires </h1>
+<table class="table table hover text-center">
+<thead class="table">
+
+    <tr>
+      <th scope="col-md-2">id_horairel</th>
+      <th scope="col-md-2">jour</th>
+      <th scope="col-md-2">ouverture</th>
+      <th scope="col-md-2">fermeture</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+
+        <tr class="table" *ngFor="let opens of horaire">
+          <td class="col-md-2">{{ opens.id_horaire }}</td>
+          <td class="col-md-2">{{ opens.jour }}</td>
+          <td class="col-md-2">{{ opens.ouverture}}</td>
+            <td class="col-md-2">{{ opens.fermeture}}</td>
+            <td class="col-md-2">
+              <button type="button" class="btn btn-info" (click)="updateHoraires(opens)"> Edit </button>
+            </td>
+          </tr>
+
+  </tbody>
+</table>
+
+

@@ -1,0 +1,21 @@
+<div class="card text-center">
+<div *ngFor='let elements of formules' class="col s6 m4">
+  <div class="card-header">{{ elements.titre}}</div>
+
+  <div class="card-body"></div>
+  <h5 class="card-title">{{ elements.formule_name}}</h5>
+  <p class="card-text">{{  elements.prix }}</p>
+  <p class="card-text">{{  elements.description}}</p>
+
+      </div>
+    </div>
+
+
+
+
+      <div>
+              <button type="button" class="btn btn-info" (click)="OnAddMenu()"> ajouter menu </button>
+              </div>
+
+
+

@@ -1,0 +1,17 @@
+
+
+<h1>Ma Carte</h1>
+<div class="card text-center">
+  <div *ngFor="let plats of cartes" class="col s6 m4">
+    <div class="card-header">{{ plats.name_categorie }}</div>
+
+    <div class="card-body"></div>
+    <h5 class="card-title">{{  plats.titre }}</h5>
+    <p class="card-text">{{  plats.description }}</p>
+    <p class="card-text">{{  plats.prix}}euros</p>
+
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="btn btn-success" (click)="onAddNewCarte()">ajouter un autre element</button>
+      </div>

@@ -1,0 +1,24 @@
+<main class="balck-border">
+<div class="form-group">
+</div>
+<div class ="row prt-list">
+<div class="col-md-2 prt-list">id_horaire</div>
+<div class="col-md-2 prt-list">jour</div>
+<div class="col-md-2 prt-list">ouverture</div>
+<div class="col-md-2 prt-list">fermeture</div>
+<div class="col-sm-2 prt-list">action</div>
+
+
+
+        <div class="row prt-list" *ngFor="let opens of horaire">
+          <div class="col-md-2">{{ opens.id_horaire }}</div>
+          <div class="col-md-2">{{ opens.jour }}</div>
+          <div class="col-md-2">{{ opens.ouverture}}</div>
+            <div class="col-md-2">{{ opens.fermeture}}</div>
+            <div class="col-md-2">
+              <button type="button" class="btn btn-info" (click)="updateHoraires(opens)"> Edit </button>
+            </div>
+          </div>
+</div>
+        </main>
+

@@ -1,0 +1,29 @@
+
+<h1>Mes reservations</h1>
+<table class="table table hover text-center">
+<thead class="table">
+
+    <tr>
+      <th scope="col-md-2">Email</th>
+      <th scope="col-md-2">prenom</th>
+      <th scope="col-md-2">date</th>
+      <th scope="col-md-2">horaire</th>
+      <th scope="col-md-2">allergies</th>
+      <th scope="col-md-2"> nombre de convives</th>
+    </tr>
+  </thead>
+   <tbody>
+        <tr class="table" *ngFor="let table of tables">
+
+          <td class="col-md-2">{{ table.email }}</td>
+          <td class="col-md-2">{{ table.username}}</td>
+         <td class="col-md-2">{{ table.date}}</td>
+         <td class="col-md-2">{{ table.time}}</td>
+         <td class="col-md-2">{{ table.allergy}}</td>
+         <td class="col-md-2">{{ table.nb_personnes}}</td>
+
+        </tr>
+      </tbody>
+
+</table>
+

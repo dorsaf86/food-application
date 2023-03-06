@@ -1,0 +1,30 @@
+<h2 class="text-center"> Connexion </h2>
+<div class="row">
+  <div class="col-md-3">
+  </div>
+  <div class="col-md-6 col -md-offset-3">
+    <div class="jumbotron">
+      <form [formGroup]="angForm" (ngSubmit)="angForm" autocomplete="off">
+        <div class="formGroup">
+          <label for="email"> Email </label>
+          <input type="email" name="email" formControlName="email" autocomplete="off" class="formControl input-sm"
+            placeholder="adresse Email">
+        </div>
+
+        <div class="formGroup">
+          <label for="password"> Mot de passe</label>
+          <input type="password" name="password" formControlName="password" autocomplete="off"
+            class="formControl input-sm" placeholder="password">
+        </div>
+
+        <button type="button" class="btn btn-primary" (click)="onSubmitForm()">se connecter</button>
+      </form>
+
+    </div>
+  </div>
+  <div class=" col-md-3">
+
+  </div>
+</div>
+
+<app-footer></app-footer>

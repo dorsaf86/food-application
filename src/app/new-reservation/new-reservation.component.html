@@ -1,0 +1,71 @@
+<div class="col-md-6">
+  <form [formGroup]="hallForm" novalidate method="post">
+
+    <h2 class="text-center">formulaire reservation</h2>
+    <h5 class="text-center">{{placeRester}}</h5>
+    <div class="form-group">
+      <label for="username">Nom et prenom</label>
+      <input type="text" formControlName="username" placeholder="username" name="username" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="Email">Email</label>
+      <input type="Email" formControlName="Email" placeholder="Email" name="Email" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="date">Date</label>
+      <input type="date" (change)="SendDataonChange($event)" name="date" formControlName="date" class="form-control">
+
+    </div>
+
+
+    <div class="form-group">
+      <label for="time">Time</label>
+      <select [(ngModel)]="timeSelected" name="time" class="form-control" formControlName="time">
+
+        <option>--select creneaux--</option>
+        <option [value]="timeSlot.value" *ngFor="let timeSlot  of times">{{timeSlot.value}}</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="allergy">Allergies</label>
+      <input type="text" formControlName="allergy" placeholder="allergy" name="allergy" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="nbPersonnes">Nombre des personnes</label>
+      <select [(ngModel)]="selectedOption" class="form-control" required name="nbPersonnes"
+        formControlName="nbPersonnes">
+        <option *ngFor="let personne of nbPersonnes" [value]="personne">{{personne}}</option>
+      </select>
+    </div>
+    <div>
+      <div *ngIf="selectedOption==1">
+        <div>1 is selected</div>
+      </div>
+      <div *ngIf="selectedOption==2">
+        <div>2 is selected</div>
+      </div>
+      <div *ngIf="selectedOption==3">
+        <div>3 is selected</div>
+      </div>
+      <div *ngIf="selectedOption==4">
+        <div>4 is selected</div>
+      </div>
+      <div *ngIf="selectedOption==5">
+        <div>5 is selected</div>
+      </div>
+
+    </div>
+
+    <div>
+      <button type="button" class="btn btn-info" (click)="onSubmitForm()"> Enregistrer </button>
+
+
+    </div>
+    <div>{{messageForm}}</div>
+
+  </form>
+</div>
+<app-footer></app-footer>
+

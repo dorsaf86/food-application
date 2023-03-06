@@ -1,0 +1,32 @@
+
+
+
+
+
+<div class="form-group">
+
+<div class ="row prt-list">
+  <div class="col-md-2 prt-list">img_id</div>
+  <div class="col-md-2 prt-list">img_titre</div>
+  <div class="col-md-2 prt-list">img_src</div>
+  <div class="col-sm-2 prt-list">action</div>
+
+
+          <div class="row prt-list" *ngFor="let photos of images ">
+            <div class="col-md-2">{{ photos.img_id }}</div>
+            <div class="col-md-2">{{ photos.img_titre }}</div>
+            <div class="col-md-2">{{ photos.img_src}}
+            <img [src]="photos.img_src" [alt]="">
+            </div>
+              <div class="col-md-2">
+              <button type="button" class="btn btn-danger" (click)="deletePhotos(photos.img_id)">Delete</button>
+              <button type="button" class="btn btn-info" (click)="updatePhotos(photos)"> Edit </button>
+              </div>
+             </div>
+
+            </div>
+
+
+<div >
+  <button type="button" class="btn btn-success" (click)="onAddNewPhotos()">ajouter une photo</button>
+</div>

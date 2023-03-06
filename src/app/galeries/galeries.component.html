@@ -1,0 +1,38 @@
+
+
+
+
+  <h1>Ma galerie Images</h1>
+  <table class="table table hover text-center">
+  <thead class="table">
+
+      <tr>
+        <th scope="col-md-2">ID</th>
+        <th scope="col-md-2">photo</th>
+        <th scope="col-md-2">titre</th>
+        <th scope="col-md-2">action</th>
+      </tr>
+    </thead>
+
+     <tbody>
+          <tr class="table" *ngFor="let photos of images">
+           <td class="col-md-2">{{ photos.img_id }}</td>
+           <td class="col-md-2">{{ photos.img_src}}
+          <img
+          [src]="photos.img_src" [alt]=""
+          style="width: 45px; height: 45px"
+          class="rounded-circle"></td>
+          <td class="col-md-2">{{ photos.img_titre }}</td>
+          <td class="col-md-2">
+          <button type="button" class="btn btn-success"(click)="updatePhotos(photos)">Edit</button>
+          <button type="button" class="btn btn-danger" (click)="deletePhotos(photos.img_id)">Delete</button>
+
+                </td>
+              </tr>
+          </tbody>
+  </table>
+
+
+<div>
+  <button type="button" class="btn btn-success" (click)="onAddNewPhotos()">ajouter une photo</button>
+</div>

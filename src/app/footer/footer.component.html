@@ -1,0 +1,25 @@
+<div class=" footer">
+  <div class="row">
+    <!--- name -->
+    <div class="col-lg-6">
+      <p>NOTRE RESTAURANT SE TROUVE: rue de la foret, la haute savoie</p>
+
+      <h1>HORAIRE D ' OUVERTURE</h1>
+    </div>
+    <div class="row prt-list" *ngFor="let opens of horaire">
+      <div class="col-md-2">{{ opens.jour }}</div>
+      <div class="col-md-2">{{ opens.ouverture}}</div>
+        <div class="col-md-2">{{ opens.fermeture}}</div>
+  </div>
+  <div class="col-lg-3 item social">
+    <a href="#"><i class="icon ion-social-facebook">
+
+    </i></a><a href="#"><i class="icon ion-social-twitter">
+
+    </i></a><a href="#"><i class="icon ion-social-snapchat"></i></a>
+    <a href="#"><i class="icon ion-social-instagram"></i></a>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,27 @@
+<body>
+  <header>
+
+     <div class="contenair">
+      <img id="logo" src="/assets/saveur.png">
+      <div class="box">
+
+          <!-- <button type="button" *ngIf="isClient" class="btn btn-outline-success" (click)="onEspaceClient()">ESPACE CLIENT </button> -->
+          <button type="button" *ngIf="isAdmin" class="btn btn-outline-success" (click)="onEspaceAdmin()">ESPACE ADMIN </button>
+          <button class="btn btn-success" *ngIf="loginbtn" routerLink="/login" routerLinkActive="active">se connecter</button>
+          <button class="btn btn-outline-success" *ngIf="loginbtn" routerLink="/client-register" routerLinkActive="active">Inscription</button>
+          <button type="btn btn-danger" *ngIf="logoutbtn" class="btn btn-danger " (click)="logout()">Deconnexion</button>
+
+
+
+      </div>
+    </div>
+  </header>
+  <section>
+    <app-about></app-about>
+
+  </section>
+
+<footer>
+  <app-footer></app-footer>
+</footer>
+</body>
