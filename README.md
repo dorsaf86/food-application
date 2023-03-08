@@ -9,8 +9,8 @@ instal bootsrap a partir  terminal de visual studio code , ainsi de bein faire l
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
-pour telecharger la partie backend  c'est dans le fichier backfood  
-ls autres fichier c'est pour l 'installtion de la partie front angular
+pour telecharger la partie backend  c'est dans le fichier back app food. 
+ls autres fichier c'est pour l 'installtion de la partie front anguar
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
