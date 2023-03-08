@@ -1,8 +1,9 @@
 # FoodApplication
-
+projet  ECF de fin formation graduate developpeur angular
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
 Il faut  crée la base de donnéés sur votre serveur en important le fichier sql 
-ce projet a été generé avec php 
+ce projet a été generé avec php , vous devez installer php la  derniere veriosn.
+instal bootsrap a partir  terminal de visual studio code , ainsi de bein faire la cofiguration dans le fichier package json dans  angular.
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
