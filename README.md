@@ -4,11 +4,16 @@
 
 projet  ECF de fin formation graduate developpeur angular
 pour ce projet il faut intaller les technologies suivants afin que le projet s 'installe corrrectement dans votre machine:
+
 [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
+
 php pour la parties backend
 bootsrap framwork et sa configuration, dans le fichier angular.json/style.
+
 création de la base de donnéés sur votre serveur en important le fichier SQL.
+
 fichier back-app-food contient toute la partie backend/php.
+
 les restes de fichier:node_modules, src, editorconfig, gitignore, angular.json, karma.config.json, package-lockjson, tsconfig.app.json
 c 'est la partie frontend angular 
 
