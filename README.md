@@ -7,7 +7,8 @@ pour ce projet il faut intaller les technologies suivants afin que le projet s '
 
 [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
 
-php pour la parties backend
+php pour le backend version recente.
+
 bootsrap framwork et sa configuration, dans le fichier angular.json/style.
 
 création de la base de donnéés sur votre serveur en important le fichier SQL.
