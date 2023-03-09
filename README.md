@@ -1,16 +1,21 @@
 # FoodApplication
+##guide d 'utilisation:
 projet  ECF de fin formation graduate developpeur angular
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
-Il faut  crée la base de donnéés sur votre serveur en important le fichier sql 
-ce projet a été generé avec php , vous devez installer php la  derniere veriosn.
-instal bootsrap a partir  terminal de visual studio code , ainsi de bein faire la cofiguration dans le fichier package json dans  angular.
+pour ce projet il faut intaller les technologies suivants afin que le projet s 'installe corrrectement dans votre machine:
+[Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
+php pour la parties backend
+bootsrap framwork et sa configuration, dans le fichier angular.json/style.
+création de la base de donnéés sur votre serveur en important le fichier SQL.
+fichier back-app-food contient toute la partie backend/php.
+les restes de fichier:node_modules, src, editorconfig, gitignore, angular.json, karma.config.json, package-lockjson, tsconfig.app.json
+c 'est la partie frontend angular 
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
-pour telecharger la partie backend  c'est dans le fichier back app food. 
-ls autres fichier c'est pour l 'installtion de la partie front anguar
+
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
